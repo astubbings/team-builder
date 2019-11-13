@@ -3,7 +3,7 @@ import './Card.css';
 
 const Card = props => {
   return (
-    <div className="cardList">
+    <div className="cardListStyle">
       {props.members.map(item => (
         <div className="cardStyle" key={item.id}>
           <h2>{item.userName}</h2>
