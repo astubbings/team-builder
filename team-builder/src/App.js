@@ -11,7 +11,7 @@ function App() {
     const [members, setMembers] = useState([
       {
         id: 1,
-        name: "Alex Stubbings",
+        userName: "Alex Stubbings",
         email: "AlexTheDriver@strugglebus.com",
         role: "Struggle Bus Driver"
       }
@@ -20,7 +20,7 @@ function App() {
     const addNewMember = mem => {
       const newMember = {
         id: Date.now(),
-        name: mem.name,
+        userName: mem.userName,
         email: mem.email,
         role: mem.role
       };

@@ -3,10 +3,10 @@ import './Card.css';
 
 const Card = props => {
   return (
-    <div className="note-list">
+    <div className="cardList">
       {props.members.map(item => (
-        <div className="note" key={item.id}>
-          <h2>{item.name}</h2>
+        <div className="cardStyle" key={item.id}>
+          <h2>{item.userName}</h2>
           <p>{item.email}</p>
           <p>{item.role}</p>
         </div>

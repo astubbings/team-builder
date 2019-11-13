@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const MemberForm = props => {
   //const [note, setNote] = useState({ title: "", body: "" });
-  const [member, setMember] = useState({ name: "", email: "", role: "" });
+  const [member, setMember] = useState({ userName: "", email: "", role: "" });
 
   const handleChanges = e => {
     setMember({ ...member, [e.target.name]: e.target.value });
@@ -12,19 +12,19 @@ const MemberForm = props => {
   const submitForm = e => {
     e.preventDefault();
     props.addNewMember(member);
-    setMember({ name: "", email: "", role: "" });
+    setMember({ userName: "", email: "", role: "" });
   };
 
 
   return (
     <form onSubmit={submitForm}>
-      <label htmlFor="name">Member Name</label>
+      <label htmlFor="memName">Member Name</label>
       <input
-        id="name"
+        id="memName"
         type="text"
-        name="name"
+        name="userName"
         onChange={handleChanges}
-        value={member.name}
+        value={member.userName}
       />
       <label htmlFor="email">Email</label>
       <input
