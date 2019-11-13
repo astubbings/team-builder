@@ -4,11 +4,11 @@ import './Card.css';
 const Card = props => {
   return (
     <div className="note-list">
-      {props.Card.map(note => (
-        <div className="note" key={note.id}>
-          <h2>{note.name}</h2>
-          <h3>{note.email}</h3>
-          <h3>{note.role}</h3>
+      {props.members.map(item => (
+        <div className="note" key={item.id}>
+          <h2>{item.name}</h2>
+          <p>{item.email}</p>
+          <p>{item.role}</p>
         </div>
       ))}
     </div>

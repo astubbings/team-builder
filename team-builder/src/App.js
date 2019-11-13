@@ -12,7 +12,7 @@ function App() {
       {
         id: 1,
         name: "Alex Stubbings",
-        email: "Happy little quote",
+        email: "AlexTheDriver@strugglebus.com",
         role: "Struggle Bus Driver"
       }
     ]);
@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>My Notes</h1>
+      <h1>Members List</h1>
       {/* we are going to pass a function down as a prop */}
       <MemberForm addNewMember={addNewMember} />
       <MemberCard members={members} />
