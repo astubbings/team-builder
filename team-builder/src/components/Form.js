@@ -28,6 +28,7 @@ const MemberForm = props => {
       />
       <label htmlFor="email">Email</label>
       <input
+        required
         id="email"
         type="text"
         name="email"
